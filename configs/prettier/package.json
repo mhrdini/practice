@@ -17,6 +17,7 @@
   "devDependencies": {
     "@practice/config-typescript": "workspace:*",
     "@types/node": "catalog:",
+    "prettier-plugin-tailwindcss": "^0.7.2",
     "typescript": "catalog:"
   }
 }
