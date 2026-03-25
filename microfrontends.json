@@ -1,0 +1,19 @@
+{
+  "$schema": "https://turborepo.dev/microfrontends/schema.json",
+  "applications": {
+    "@apps/react": {
+      "development": {
+        "local": {
+          "port": 3000
+        }
+      }
+    },
+    "@apps/vue": {
+      "development": {
+        "local": {
+          "port": 3001
+        }
+      }
+    }
+  }
+}
