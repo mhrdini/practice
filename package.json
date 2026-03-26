@@ -1,38 +1,16 @@
 {
   "name": "practice",
   "private": true,
-  "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev",
-    "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "check-types": "turbo run check-types",
-    "commit": "printf '' > .git/COMMIT_EDITMSG && git-cz"
-  },
   "packageManager": "pnpm@10.12.4",
   "engines": {
     "node": ">=18"
   },
-  "devDependencies": {
-    "@apps/react": "workspace:*",
-    "@apps/vue": "workspace:*",
-    "@commitlint/cli": "^20.1.0",
-    "@commitlint/config-conventional": "^20.0.0",
-    "@commitlint/cz-commitlint": "^20.1.0",
-    "@practice/config-eslint": "workspace:*",
-    "@practice/config-prettier": "workspace:*",
-    "@practice/config-typescript": "workspace:*",
-    "barrelsby": "^2.8.1",
-    "commitizen": "^4.3.1",
-    "dotenv": "catalog:",
-    "dotenv-cli": "catalog:",
-    "eslint": "catalog:",
-    "husky": "^9.1.7",
-    "lint-staged": "^16.2.6",
-    "prettier": "catalog:",
-    "tsx": "catalog:",
-    "turbo": "^2.6.0",
-    "validate-branch-name": "^1.3.2"
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "check-types": "turbo run check-types",
+    "commit": "printf '' > .git/COMMIT_EDITMSG && git-cz"
   },
   "peerDependencies": {
     "inquirer": "catalog:"
@@ -41,9 +19,30 @@
     "pattern": "^(main){1}$|^(feat|fix|hotfix|release|chore)/.+$",
     "errorMsg": "Invalid branch name \n Ex. [master, develop, feature/feature-info, fix/112-fix-info, hotfix/112-hotfix-info, release/1.0.0, chores/chores-info]"
   },
+  "dependencies": {
+    "dotenv-expand": "catalog:"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "catalog:",
+    "@apps/react": "workspace:*",
+    "@commitlint/cli": "catalog:",
+    "@commitlint/config-conventional": "catalog:",
+    "@commitlint/cz-commitlint": "catalog:",
+    "barrelsby": "catalog:",
+    "commitizen": "catalog:",
+    "dotenv": "catalog:",
+    "dotenv-cli": "catalog:",
+    "eslint": "catalog:",
+    "eslint-plugin-format": "catalog:",
+    "husky": "catalog:",
+    "lint-staged": "catalog:",
+    "prettier": "catalog:",
+    "tsx": "catalog:",
+    "turbo": "catalog:",
+    "validate-branch-name": "catalog:"
+  },
   "lint-staged": {
-    "**/*.{js,ts,jsx,tsx,css,html}": [
-      "prettier --single-quote --write",
+    "**/*.{js,ts,jsx,tsx,css,html,vue}": [
       "eslint --fix"
     ]
   },
@@ -51,8 +50,5 @@
     "commitizen": {
       "path": "@commitlint/cz-commitlint"
     }
-  },
-  "dependencies": {
-    "dotenv-expand": "^12.0.3"
   }
 }
