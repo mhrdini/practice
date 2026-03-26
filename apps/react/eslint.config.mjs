@@ -1,5 +1,3 @@
-import nextConfig from '@practice/config-eslint/next-js'
+import antfuConfig from '@practice/config-eslint/antfu'
 
-export default [
-  ...nextConfig,
-]
+export default antfuConfig

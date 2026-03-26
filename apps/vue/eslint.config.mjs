@@ -1,5 +1,3 @@
-import nuxtConfig from '@practice/config-eslint/nuxt'
+import antfuConfig from '@practice/config-eslint/antfu'
 
-export default [
-  ...nuxtConfig,
-]
+export default antfuConfig
