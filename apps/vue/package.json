@@ -1,17 +1,20 @@
 {
-  "name": "vue",
+  "name": "@apps/vue",
   "type": "module",
   "private": true,
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "nuxt dev --port $TURBO_MFE_PORT",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
     "@nuxt/eslint": "catalog:nuxt",
+    "@nuxt/fonts": "0.14.0",
+    "@tailwindcss/vite": "catalog:tailwindcss",
     "nuxt": "catalog:nuxt",
+    "tailwindcss": "catalog:tailwindcss",
     "vue": "catalog:nuxt",
     "vue-router": "catalog:nuxt"
   },
