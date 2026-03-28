@@ -1,0 +1,27 @@
+{
+  "name": "@practice/ui",
+  "type": "module",
+  "exports": {
+    "./globals.css": "./dist/index.css",
+    "./lib/*": "./src/lib/*.ts"
+  },
+  "scripts": {
+    "build:styles": "tailwindcss -i ./src/styles/globals.css -o ./dist/index.css",
+    "dev": "tailwindcss -i ./src/styles/globals.css -o ./dist/index.css --watch"
+  },
+  "dependencies": {
+    "class-variance-authority": "catalog:ui",
+    "clsx": "catalog:ui",
+    "tailwind-merge": "catalog:ui",
+    "tw-animate-css": "catalog:ui"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "catalog:tailwindcss",
+    "@tailwindcss/postcss": "catalog:tailwindcss",
+    "autoprefixer": "catalog:tailwindcss",
+    "eslint": "catalog:",
+    "eslint-plugin-format": "catalog:",
+    "tailwindcss": "catalog:tailwindcss",
+    "typescript": "catalog:"
+  }
+}

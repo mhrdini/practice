@@ -8,9 +8,14 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
+    "ui": "turbo run ui",
+    "postui": "pnpm run barrels",
+    "ui:react": "turbo run ui:react",
+    "ui:vue": "turbo run ui:vue",
     "lint": "turbo run lint",
     "check-types": "turbo run check-types",
-    "commit": "printf '' > .git/COMMIT_EDITMSG && git-cz"
+    "commit": "printf '' > .git/COMMIT_EDITMSG && git-cz",
+    "barrels": "node scripts/generate-barrels.js"
   },
   "peerDependencies": {
     "inquirer": "catalog:"

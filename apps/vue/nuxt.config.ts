@@ -10,12 +10,20 @@ export default defineNuxtConfig({
       standalone: false,
     },
   },
-  css: ['./app/assets/css/main.css'],
+  css: ['./app/assets/css/styles.css'],
   vite: {
     base: '',
     plugins: [
       tailwindcss(),
     ],
+    optimizeDeps: {
+      include: [
+        'class-variance-authority',
+        'reka-ui',
+        'clsx',
+        'tailwind-merge',
+      ],
+    },
   },
   fonts: {
     families: [

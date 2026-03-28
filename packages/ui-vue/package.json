@@ -1,0 +1,33 @@
+{
+  "name": "@practice/ui-vue",
+  "exports": {
+    ".": "./src/components/index.ts"
+  },
+  "scripts": {
+    "ui": "pnpm dlx shadcn-vue@latest",
+    "ui:vue": "pnpm dlx shadcn-vue@latest"
+  },
+  "peerDependencies": {
+    "vue": "catalog:vue"
+  },
+  "dependencies": {
+    "@practice/ui": "workspace:*",
+    "@vueuse/core": "catalog:ui",
+    "class-variance-authority": "catalog:ui",
+    "clsx": "catalog:ui",
+    "lucide-vue-next": "catalog:ui",
+    "reka-ui": "catalog:ui",
+    "tailwind-merge": "catalog:ui",
+    "tw-animate-css": "catalog:ui"
+  },
+  "devDependencies": {
+    "@practice/config-typescript": "workspace:*",
+    "@tailwindcss/cli": "catalog:tailwindcss",
+    "@tailwindcss/postcss": "catalog:tailwindcss",
+    "autoprefixer": "catalog:tailwindcss",
+    "eslint": "catalog:",
+    "eslint-plugin-format": "catalog:",
+    "tailwindcss": "catalog:tailwindcss",
+    "typescript": "catalog:"
+  }
+}

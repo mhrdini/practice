@@ -8,6 +8,8 @@
     "start": "next start"
   },
   "dependencies": {
+    "@practice/ui": "workspace:*",
+    "@practice/ui-react": "workspace:*",
     "next": "catalog:next",
     "react": "catalog:react",
     "react-dom": "catalog:react"

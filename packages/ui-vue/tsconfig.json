@@ -1,0 +1,13 @@
+{
+  "extends": "@practice/config-typescript/compiled.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "@practice/ui-vue/*": ["./src/*"]
+    },
+    "outDir": "dist"
+  },
+  "include": ["./src/**/*.ts", "./src/**/*.tsx"],
+  "exclude": ["node_modules", "dist"]
+}

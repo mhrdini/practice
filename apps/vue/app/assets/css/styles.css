@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@import '@practice/ui/globals.css';
+
+@theme inline {
+  --font-display: "Geist", "sans-serif";
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-width: 100%;
+  min-height: 100%;
+  font-family: var(--font-display);
+  & > div#__nuxt {
+    min-width: 100%;
+    min-height: 100%;
+    display: inline-flex;
+    & > * {
+      display: inline-flex;
+    }
+  }
+}
+

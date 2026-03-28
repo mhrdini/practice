@@ -16,7 +16,15 @@
     "dev": {
       "cache": false,
       "persistent": true
+    },
+    "ui": {
+      "cache": false
+    },
+    "ui:react": {
+      "cache": false
+    },
+    "ui:vue": {
+      "cache": false
     }
-
   }
 }

@@ -1,0 +1,35 @@
+{
+  "name": "@practice/ui-react",
+  "exports": {
+    ".": "./src/components/index.ts",
+    "./hooks/*": "./src/hooks/*.ts"
+  },
+  "scripts": {
+    "ui": "pnpm dlx shadcn@latest",
+    "ui:react": "pnpm dlx shadcn@latest"
+  },
+  "peerDependencies": {
+    "@types/react": "catalog:react",
+    "react": "catalog:react"
+  },
+  "dependencies": {
+    "@practice/ui": "workspace:*",
+    "class-variance-authority": "catalog:ui",
+    "clsx": "catalog:ui",
+    "lucide-react": "catalog:ui",
+    "radix-ui": "catalog:ui",
+    "shadcn": "catalog:ui",
+    "tailwind-merge": "catalog:ui",
+    "tw-animate-css": "catalog:ui"
+  },
+  "devDependencies": {
+    "@practice/config-typescript": "workspace:*",
+    "@tailwindcss/cli": "catalog:tailwindcss",
+    "@tailwindcss/postcss": "catalog:tailwindcss",
+    "autoprefixer": "catalog:tailwindcss",
+    "eslint": "catalog:",
+    "eslint-plugin-format": "catalog:",
+    "tailwindcss": "catalog:tailwindcss",
+    "typescript": "catalog:"
+  }
+}
